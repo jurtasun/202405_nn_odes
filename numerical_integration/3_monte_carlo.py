@@ -1,11 +1,10 @@
 # Neural Networks for ODEs
-# Jesús Urtasun, Imperial College London - May 2024
+# Jesús Urtasun, ICL - May 2024
 # Numerical integration - Monte Carlo
 print("Numerical integration - Monte Carlo")
 
 # Import libraries
-import random
-import math
+import random, math
 
 # Function performing Monte Carlo integration
 def monte_carlo_integration(f, a, b, n):
@@ -30,17 +29,6 @@ def monte_carlo_integration(f, a, b, n):
     integral = (b - a) * sum_f / n
     return integral
 
-# Define the function to integrate
-def f(x):
-    return math.sin(x)
-
-# Integration interval
-a = 0
-b = math.pi
-
-# Number of random samples
-n = 100000
-
 # Function to integrate
 def f(x):
     return math.sin(x)
@@ -48,12 +36,12 @@ def f(x):
 # Integration interval
 a = 0
 b = math.pi
-n = 1000000
+n = 100000
 
 # Calculate integral and error
 approx_integral = monte_carlo_integration(f, a, b, n)
 exact_integral = 2.0
 error = abs(exact_integral - approx_integral)
 
-print(f"The approximate value of the integral is: {approx_integral}")
-print(f"The error is: {error}")
+print(f"Integral: {approx_integral}")
+print(f"Error: {error}")

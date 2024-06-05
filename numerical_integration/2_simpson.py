@@ -1,5 +1,5 @@
 # Neural Networks for ODEs
-# Jesús Urtasun, Imperial College London - May 2024
+# Jesús Urtasun, ICL - June 2024
 # Numerical integration - Simpson rule
 print("Numerical integration - Simpson rule")
 
@@ -43,12 +43,12 @@ def f(x):
 # Integration interval
 a = 0
 b = math.pi
-n = 1000000
+n = 100000
 
 # Calculate integral and error
 approx_integral = simpson_rule(f, a, b, n)
 exact_integral = 2.0
 error = abs(exact_integral - approx_integral)
 
-print(f"The approximate value of the integral is: {approx_integral}")
-print(f"The error is: {error}")
+print(f"Integral: {approx_integral}")
+print(f"Error: {error}")
