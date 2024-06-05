@@ -1,5 +1,5 @@
 # Neural Networks for ODEs
-# Jesús Urtasun, Imperial College London - May 2024
+# Jesús Urtasun, ICL - June 2024
 # Example solution of ordinary differential equations
 print("Example solution of ordinary differential equations")
 
@@ -57,9 +57,9 @@ y_exact = y0 * np.exp(-2 * t_exact)
 
 # Plot the results
 plt.figure(figsize=(10, 6))
-plt.plot(t_euler, y_euler, "o-", label="Euler Method", markersize=4)
-plt.plot(t_rk, y_rk, "s-", label="Runge-Kutta 4th Order", markersize=4)
-plt.plot(t_exact, y_exact, "-", label="Exact Solution")
+plt.plot(t_euler, y_euler, "o-", label = "Euler Method", markersize = 4)
+plt.plot(t_rk, y_rk, "s-", label = "Runge-Kutta 4th Order", markersize = 4)
+plt.plot(t_exact, y_exact, "-", label = "Exact Solution")
 plt.xlabel("Time t")
 plt.ylabel("y(t)")
 plt.title("Comparison of Euler and Runge-Kutta Methods")
