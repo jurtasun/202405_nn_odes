@@ -1,5 +1,5 @@
 # Neural Networks for ODEs
-# Jesús Urtasun, ICL - May 2024
+# Jesús Urtasun, ICL - June 2024
 # Numerical integration - Monte Carlo
 print("Numerical integration - Monte Carlo")
 
